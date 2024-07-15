@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sw quiz</title>
+    <link rel="icon" href="215_20240715130936.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+    <a href="Leaderstats.html" class="Leaderstats">View Leaderboard</a>
+    </header>
+    <div class="info">
+        <h2>Before we get started, please enter your name.</h2>
+        <form id="nameForm">
+            <div class="sign-in">
+                <input type="text" id="nameInput" placeholder="Enter your name" spellcheck="false" required>
+            </div>
+        </form>
+    </div>
+
+    <div id="quiz" style="display: none;">
+        <h2 class="quiz-welcome">
+            Welcome to Swrdom Quiz!
+            <span class="loading-circle"></span>
+        </h2>
+        <section class="quiz-area" style="display: none;">
+            <h2 class="user" id="user">User name </h2> <div class="score-info"><span class="ton">Your score is : </span> <span class="score" id="score">0</span></div>
+            <div class="the-actual-quiz">
+                
+                
+
+                <!-- Quiz Cards -->
+                <div class="card" id="card1">
+                    <h2 class="quiz-title">What is Swrdom's favourite color?</h2>
+                    <div class="choices">
+                        <button class="choice wrong">Green</button>
+                        <button class="choice correct">Purple</button>
+                        <button class="choice wrong">Blue</button>
+                        <button class="choice wrong">Red</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card2">
+                    <h2 class="quiz-title">What year Swrdom created the channel?</h2>
+                    <div class="choices">
+                        <button class="choice correct" id="choise correct">2016</button>
+                        <button class="choice wrong">2018</button>
+                        <button class="choice wrong">2019</button>
+                        <button class="choice wrong">2022</button>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <h2 class="quiz-title">Where is Swrdom from?</h2>
+                    <div class="choices">
+                       
+                        <button class="choice wrong">Iraq</button>
+                        <button class="choice wrong">Algeria</button>
+                        <button class="choice wrong">Tunisie</button>
+                        <button class="choice correct">Saudi Arabia</button>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <h2 class="quiz-title">What is Swrdom's bunny name?</h2>
+                    <div class="choices">
+                        <button class="choice correct">Sunset</button>
+                        <button class="choice wrong">Sunrise</button>
+                        <button class="choice wrong">Bunny </button>
+                        <button class="choice wrong">Millie</button>
+                    </div>
+                </div>
+                <div class="card" id="card5">
+                    <h2 class="quiz-title">What is Swrdom's fav element</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">Wind</button>
+                        <button class="choice wrong">Water </button>
+                        <button class="choice correct">Fire</button>
+                        <button class="choice wrong">Earth</button>
+                    </div>
+                </div>
+                <div class="card" id="card6">
+                    <h2 class="quiz-title">At what date Swrdom hit 100k?</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">2023/12/28</button>
+                        <button class="choice wrong">2024/2/4 </button>
+                        <button class="choice correct">2024/1/10</button>
+                        <button class="choice wrong">2024/3/7</button>
+                    </div>
+                </div>
+                <div class="card" id="card7">
+                    <h2 class="quiz-title"> Swrdom started minecraft as:</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">Java player</button>
+                        <button class="choice correct">Bedrock player</button>
+                        
+                    </div>
+                </div>
+                <div class="card" id="card8">
+                    <h2 class="quiz-title">Swrdom first started in:</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong"> Youtube</button>
+                        <button class="choice wrong"> Instagram</button>
+                        <button class="choice correct"> Twitch</button>
+                        <button class="choice wrong"> Facebook</button>
+                    </div>
+                </div>
+                <div class="card" id="card9">
+                    <h2 class="quiz-title">How many charectars does Swrdom has</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">1</button>
+                        <button class="choice correct">2</button>
+                        <button class="choice wrong">3</button>
+                        
+                        <button class="choice wrong">4</button>
+                    </div>
+                </div>
+                <div class="card" id="card10">
+                    <h2 class="quiz-title">What is Swrdom's birth date?</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">11/4</button>
+                        <button class="choice wrong">5/3</button>
+                        <button class="choice correct">9/9</button>
+                        <button class="choice wrong">7/21</button>
+                    </div>
+                </div>
+                <div class="card" id="card11">
+                    <h2 class="quiz-title" id="special-title">Swrdom's teammates at concrete craft are:</h2>
+                    <div class="choices">
+                      
+                        <button class="choice correct">Ury and Flix</button>
+                        <button class="choice wrong"> Omarfive and Zetrex </button>
+                        <button class="choice wrong"> Yousef Rozba and Haiper Exe</button>
+                        
+                        <button class="choice wrong"> Ury and Ghazi</button>
+                    </div>
+                </div>
+                <div class="card" id="card12">
+                    <h2 class="quiz-title">How many channeles Swrdom has?</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong">1</button>
+                        <button class="choice wrong">2</button>
+                        <button class="choice correct">3</button>
+                        <button class="choice wrong">4</button>
+                    </div>
+                </div>
+                <div class="card" id="card13">
+                    <h2 class="quiz-title">Who is Swrdom's official artist</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong"> Akino</button>
+                        <button class="choice wrong"> Zaineb</button>
+                        <button class="choice correct"> Tomo</button>
+                        <button class="choice wrong">Agent Moriati</button>
+                    </div>
+                </div>
+                <div class="card" id="card14">
+                    <h2 class="quiz-title">Did Swrdom used to put mouth sounds in his content?</h2>
+                    <div class="choices">
+                      
+                       
+                        
+                        <button class="choice correct"> Yes</button>
+                        <button class="choice wrong"> No</button>
+                    </div>
+                </div>
+                <div class="card" id="card15">
+                    <h2 class="quiz-title">Does Swrdom has bunny in real life?</h2>
+                    <div class="choices">
+                      
+                       
+                        
+                        <button class="choice wrong"> Yes</button>
+                        <button class="choice correct"> No</button>
+                    </div>
+                </div>
+                <div class="card" id="card16">
+                    <h2 class="quiz-title">What is Swrdom fav game after Minecraft?</h2>
+                    <div class="choices">
+                      
+                       
+                        <button class="choice wrong"> Fortnite</button>
+                        <button class="choice correct"> Stardewvalley</button>
+                        <button class="choice wrong"> Call of duty</button>
+                        <button class="choice wrong"> Gta</button>
+                    </div>
+                </div>
+                <div class="card" id="card17">
+                    <h2 class="quiz-title">Does Swrdom love drawing pixel art?</h2>
+                    <div class="choices">
+                      
+                       
+                        
+                        <button class="choice correct"> Yes</button>
+                        <button class="choice wrong"> No</button>
+                    </div>
+                </div>
+                <div class="card" id="card18">
+                    <h2 class="quiz-title"> What is his real name?</h2>
+                    <div class="choices">
+                      
+                        <button class="choice wrong"> Ahmed</button>
+                        <button class="choice wrong"> Omar</button>
+                        <button class="choice wrong"> Ali</button>
+                        <button class="choice correct"> Abdelrahmen</button>
+                    </div>
+                </div>
+                <div class="card" id="card19">
+                    <h2 class="quiz-title"> Should Swrdom give back admin to Akino?</h2>
+                    <div class="choices">
+                      
+                       
+                        <button class="choice correct">Yes </button>
+                        <button class="choice correct">Yes </button>
+                        <button class="choice correct">Yes </button>
+                        <button class="choice correct">Yes </button>
+                    </div>
+                </div>
+                
+                
+
+                <!-- Repeat similar structure for card5 to card10 -->
+                <!-- Adjust IDs and content as needed -->
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-title"> 
+            Copyrights @ <a href="https://akin0artist.github.io/AkinoArtist/">Akino Artist</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/akino_artist?igsh=MW00M3N6d291OTJqNQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC2edw5DKr26wswof3vSg9EQ"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
